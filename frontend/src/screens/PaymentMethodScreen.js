@@ -13,7 +13,9 @@ export default function PaymentMethodScreen() {
     cart: { shippingAddress, paymentMethod },
   } = state;
 
-  const [paymentMethodName, setPaymentMethodName] = useState(paymentMethod);
+  const [paymentMethodName, setPaymentMethodName] = useState(
+    paymentMethod || "PayPal"
+  );
 
   useEffect(() => {
     if (!shippingAddress.address) {
@@ -24,7 +26,7 @@ export default function PaymentMethodScreen() {
   const submitHandler = (e) => {
     e.preventDefault();
     ctxDispatch({ type: "SAVE_PAYMENT_METHOD", payload: paymentMethodName });
-    localStorage.setItem("paymentMethod", JSON.stringify(paymentMethodName));
+    localStorage.setItem("paymentMethod", paymentMethodName);
     navigate("/placeorder");
   };
 
