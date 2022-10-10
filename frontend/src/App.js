@@ -39,7 +39,7 @@ function App() {
           <Navbar bg="dark" variant="dark" expand="lg">
             <Container>
               <LinkContainer to="/">
-                <Navbar.Brand>Amazona</Navbar.Brand>
+                <Navbar.Brand>Amazona-Nes</Navbar.Brand>
               </LinkContainer>
               {/* hamburguer menu same aria-controls */}
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
