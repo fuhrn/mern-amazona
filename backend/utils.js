@@ -36,3 +36,12 @@ export const isAuth = (req, res, next) => {
     res.status(401).send({ message: 'No Token' });
   }
 }
+
+// vamos a usar isAdmin despues de isAuth, asi que ya tenemos el req.user
+export const isAdmin = (req, res, next) => { 
+  if (req.user && req.user.isAdmin) {
+    next();
+  } else {
+    res.status(401).send({ message: 'Invalid Admin Token' });
+  }
+}
