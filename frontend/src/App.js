@@ -24,6 +24,8 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import DashboardScreen from "./screens/DashboardScreen";
 import AdminRoute from "./components/AdminRoute";
 import ProductListScreen from "./screens/ProductListScreen";
+// npm run ruild desde root
+// npm run start desde frontend
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
