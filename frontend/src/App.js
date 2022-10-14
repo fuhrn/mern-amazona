@@ -3,7 +3,14 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
-import { Navbar, Container, Nav, Badge, NavDropdown, Button } from "react-bootstrap";
+import {
+  Navbar,
+  Container,
+  Nav,
+  Badge,
+  NavDropdown,
+  Button,
+} from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { useContext, useEffect, useState } from "react";
 import { Store } from "./Store";
@@ -28,15 +35,16 @@ import ProductEditScreen from "./screens/ProductEditScreen";
 import OrderListScreen from "./screens/OrderListScreen";
 import UserListScreen from "./screens/UserListScreen";
 import UserEditScreen from "./screens/UserEditScreen";
+import MapScreen from "./screens/MapScreen";
 // npm run ruild desde root
 // npm run start desde frontend
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
-  const { cart, userInfo } = state;
+  const { fullBox, cart, userInfo } = state;
 
-  useEffect(() => { 
-    const fetchCategories = async () => { 
+  useEffect(() => {
+    const fetchCategories = async () => {
       try {
         const { data } = await axios.get("/api/products/categories");
         setCategories(data);
@@ -64,8 +72,12 @@ function App() {
       <div
         className={
           sidebarIsOpen
-            ? "d-flex flex-column site-container active-cont"
-            : "d-flex flex-column site-container"
+            ? fullBox
+              ? " site-container active-cont d-flex flex-column full-box"
+              : " site-container active-cont d-flex flex-column"
+            : fullBox
+            ? "site-container d-flex flex-column full-box"
+            : "site-container d-flex flex-column"
         }
       >
         <ToastContainer position="bottom-center" limit={1} />
@@ -140,8 +152,8 @@ function App() {
         <div
           className={
             sidebarIsOpen
-              ? "d-flex active-nav side-navbar justify-content-between flex-column flex-wrap"
-              : "d-flex side-navbar justify-content-between flex-column flex-wrap"
+              ? "active-nav side-navbar d-flex justify-content-between flex-wrap flex-column"
+              : "side-navbar d-flex justify-content-between flex-wrap flex-column"
           }
         >
           <Nav className="flex-column text-white w-100 p-2">
@@ -171,6 +183,14 @@ function App() {
                 element={
                   <ProtectedRoute>
                     <ProfileScreen />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/map"
+                element={
+                  <ProtectedRoute>
+                    <MapScreen />
                   </ProtectedRoute>
                 }
               />
