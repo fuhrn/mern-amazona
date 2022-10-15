@@ -57,6 +57,7 @@ function ProductScreen() {
 
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
+  const [selectedImage, setSelectedImage] = useState("");
 
   const navigate = useNavigate();
   const params = useParams();
@@ -139,7 +140,11 @@ function ProductScreen() {
     <div>
       <Row>
         <Col md={6}>
-          <img className="img-large" src={product.image} alt={product.name} />
+          <img
+            className="img-large"
+            src={selectedImage || product.image}
+            alt={product.name}
+          />
         </Col>
         <Col md={3}>
           <ListGroup variant="flush">
@@ -152,7 +157,33 @@ function ProductScreen() {
             <ListGroup.Item>
               <Rating rating={product.rating} numReviews={product.numReviews} />
             </ListGroup.Item>
-            <ListGroup.Item>Price ${product.price}</ListGroup.Item>
+                <ListGroup.Item>Price ${product.price}</ListGroup.Item>
+                <ListGroup.Item>
+                  <Row
+                    xs={1} md={2} className="g-2"
+                  >
+                    {
+                      [product.image, ...product.images].map((x) => (
+                        <Col key={x}>
+                          <Card>
+                            <Button
+                              className="thumbnail"
+                              type="button"
+                              variant="light"
+                              onClick={() => setSelectedImage(x)}
+                            >
+                              <Card.Img
+                                variant="top"
+                                src={x}
+                                alt={product.name}
+                              />
+                            </Button>
+                          </Card>
+                        </Col>
+                      ))
+                    }
+                  </Row>
+                </ListGroup.Item>
             <ListGroup.Item>Description: {product.description}</ListGroup.Item>
           </ListGroup>
         </Col>
