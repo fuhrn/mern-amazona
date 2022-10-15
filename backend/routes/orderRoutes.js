@@ -148,7 +148,7 @@ orderRouter.put(
         .messages()
         .send(
           {
-            from: "Fuhr Market <sales@mg.yourdomain.com>",
+            from: "Fuhr Ecommerce <sales@mg.yourdomain.com>",
             to: `${order.user.name} <${order.user.email}>`,
             subject: `New order ${order._id}`,
             html: payOrderEmailTemplate(order),
