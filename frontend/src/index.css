@@ -16,6 +16,10 @@ main {
   background-color: #f0c040;
   color: #000000;
 }
+.btn-primary:hover, .btn-outline-primary:hover {
+  background-color: bisque;
+  color: #000000;
+}
 
 .site-container {
   min-height: 100vh;
@@ -43,8 +47,8 @@ main {
   padding: 1rem;
 }
 
-.image-large {
-  max-width: 100%;
+.img-large {
+  max-width: 80%;
 }
 
 .img-thumbnail {
@@ -73,7 +77,7 @@ main {
   height: 100%;
   position: absolute;
   left: -300px;
-  background-color: #100901;
+  background-color: #222f3e;
   transition: 0.5s;
 }
 
@@ -136,4 +140,9 @@ button.thumbnail {
 
 .product-name-height {
   min-height: 5rem;
+}
+
+.pname:hover {
+  text-decoration: underline;
+  font-weight: bold;
 }

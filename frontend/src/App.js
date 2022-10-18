@@ -91,7 +91,7 @@ function App() {
                 <i className="fas fa-bars"></i>
               </Button>
               <LinkContainer to="/">
-                <Navbar.Brand>Fuhr eCommerce</Navbar.Brand>
+                <Navbar.Brand className="fs-3">FUHR eCommerce</Navbar.Brand>
               </LinkContainer>
               {/* hamburguer menu same aria-controls */}
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -156,13 +156,17 @@ function App() {
               : "side-navbar d-flex justify-content-between flex-wrap flex-column"
           }
         >
-          <Nav className="flex-column text-white w-100 p-2">
-            <Nav.Item>
+          <Nav className="flex-column text-white w-100 p-2 mt-2 ms-4">
+            <Nav.Item className="fs-4 mb-3">
               <strong>Categories</strong>
             </Nav.Item>
             {categories.map((category) => (
               <Nav.Item key={category}>
-                <Nav.Link as={Link} to={`/search?category=${category}`}>
+                <Nav.Link
+                  className="text-white pname"
+                  as={Link}
+                  to={`/search?category=${category}`}
+                >
                   {category}
                 </Nav.Link>
               </Nav.Item>

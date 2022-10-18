@@ -101,7 +101,7 @@ const data = {
       name: "Philips H4205 On-Ear Wireless Headphones",
       slug: "philips-h4205-on-ear-wireless-headphones",
       category: "Headphones",
-      featured: true,
+      featured: false,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/headphone_phillips_1_pw6par.jpg",
       images: [
@@ -121,7 +121,7 @@ const data = {
       name: "Bang & Olufsen Beoplay H95 Premium Comfortable Wireless",
       slug: "bang-olufsen-beoplay-h95-premium-comfortable-wireless",
       category: "Headphones",
-      featured: false,
+      featured: true,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/Bang_1_ojn2ha.jpg",
       images: [
@@ -201,7 +201,7 @@ const data = {
       name: "Amazon Basics 3-Button Wired USB",
       slug: "amazon-basics-3-button-wired-usb",
       category: "Mouses",
-      featured: true,
+      featured: false,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/amazon_mouse_1_cyoe1u.jpg",
       images: [
@@ -221,7 +221,7 @@ const data = {
       name: "Verbatim USB Corded Mini Travel Optical Wired Mouse for Mac and PC",
       slug: "verbatim-usb-corded-mini-travel-optical-wired-mouse-for-mac-and-pc",
       category: "Mouses",
-      featured: false,
+      featured: true,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/verbatim_mouse_1_ivgbbr.jpg",
       images: [
@@ -261,7 +261,7 @@ const data = {
       name: "Acer SB220Q bi 21.5 Inches Full HD (1920 x 1080) IPS",
       slug: "acer-sb220q-bi-215-inches-full-hd-1920-x-1080-ips",
       category: "Monitors",
-      featured: false,
+      featured: true,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/acer_monitor_1_goy93i.jpg",
       images: [
@@ -301,7 +301,7 @@ const data = {
       name: "LG 34WP60C-B 34-Inch 21:9 Curved UltraWide QHD (3440x1440)",
       slug: "lg-34wp60c-b-34-inch-219-curved-ultraWide-qhd-3440x1440",
       category: "Monitors",
-      featured: true,
+      featured: false,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/LG_monitor_1_ilbo0r.jpg",
       images: [

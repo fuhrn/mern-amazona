@@ -157,33 +157,27 @@ function ProductScreen() {
             <ListGroup.Item>
               <Rating rating={product.rating} numReviews={product.numReviews} />
             </ListGroup.Item>
-                <ListGroup.Item>Price ${product.price}</ListGroup.Item>
-                <ListGroup.Item>
-                  <Row
-                    xs={1} md={2} className="g-2"
-                  >
-                    {
-                      [product.image, ...product.images].map((x) => (
-                        <Col key={x}>
-                          <Card>
-                            <Button
-                              className="thumbnail"
-                              type="button"
-                              variant="light"
-                              onClick={() => setSelectedImage(x)}
-                            >
-                              <Card.Img
-                                variant="top"
-                                src={x}
-                                alt={product.name}
-                              />
-                            </Button>
-                          </Card>
-                        </Col>
-                      ))
-                    }
-                  </Row>
-                </ListGroup.Item>
+            <ListGroup.Item className="fs-4 fw-bold">
+              Price ${product.price}
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <Row xs={1} md={2} className="g-2">
+                {[product.image, ...product.images].map((x) => (
+                  <Col key={x}>
+                    <Card>
+                      <Button
+                        className="thumbnail"
+                        type="button"
+                        variant="light"
+                        onClick={() => setSelectedImage(x)}
+                      >
+                        <Card.Img variant="top" src={x} alt={product.name} />
+                      </Button>
+                    </Card>
+                  </Col>
+                ))}
+              </Row>
+            </ListGroup.Item>
             <ListGroup.Item>Description: {product.description}</ListGroup.Item>
           </ListGroup>
         </Col>
