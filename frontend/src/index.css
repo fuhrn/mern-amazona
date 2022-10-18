@@ -133,3 +133,7 @@ main {
 button.thumbnail {
   padding: 0;
 }
+
+.product-name-height {
+  min-height: 5rem;
+}
