@@ -32,7 +32,7 @@ function HomeScreen() {
     const fetchData = async () => {
       dispatch({ type: "FETCH_REQUEST" });
       try {
-        const result = await axios.get("/api/products");
+        const result = await axios.get("/api/products/featured");
         dispatch({ type: "FETCH_SUCCESS", payload: result.data });
       } catch (err) {
         dispatch({ type: "FETCH_FAIL", payload: err.message });
@@ -43,9 +43,9 @@ function HomeScreen() {
   return (
     <div>
       <Helmet>
-        <title>Amazona</title>
+        <title>Fuhr eCommerce</title>
       </Helmet>
-      <h1>Featured Products</h1>
+      <h1>Top Sellers in Fuhr eCommerce</h1>
       <div className="products">
         {loading ? (
           <LoadingBox />

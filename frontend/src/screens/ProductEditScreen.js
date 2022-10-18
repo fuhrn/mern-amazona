@@ -55,6 +55,7 @@ export default function ProductEditScreen() {
   const [images, setImages] = useState([]);
   const [brand, setBrand] = useState("");
   const [category, setCategory] = useState("");
+  const [featured, setFeatured] = useState(true);
   const [countInStock, setCountInStock] = useState(0);
   const [description, setDescription] = useState("");
 
@@ -70,6 +71,7 @@ export default function ProductEditScreen() {
         setImages(data.images);
         setBrand(data.brand);
         setCategory(data.category);
+        setFeatured(data.featured);
         setCountInStock(data.countInStock);
         setDescription(data.description);
         dispatch({ type: "FETCH_SUCCESS" });
@@ -96,6 +98,7 @@ export default function ProductEditScreen() {
           images,
           brand,
           category,
+          featured,
           countInStock,
           description,
         },
@@ -228,6 +231,18 @@ export default function ProductEditScreen() {
               required
             />
           </Form.Group>
+
+          <Form.Group controlId="featured" className="mb-3">
+            <Form.Label>Featured</Form.Label>
+            <Form.Check
+              type="switch"
+              checked={featured}
+              value={featured}
+              onChange={(e) => setFeatured(e.target.checked)}
+              label={"Featured Products will be shown in the home page."}
+            />
+          </Form.Group>
+
           <Form.Group controlId="brand" className="mb-3">
             <Form.Label>Brand</Form.Label>
             <Form.Control

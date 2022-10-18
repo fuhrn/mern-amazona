@@ -16,6 +16,14 @@ productRouter.get(
   })
 );
 
+productRouter.get(
+  "/featured",
+  expressAsyncHandler(async (req, res) => {
+    const products = await Product.find({ featured: true });
+    res.send(products);
+  })
+);
+
 productRouter.post(
   '/',
   isAuth,
@@ -27,6 +35,7 @@ productRouter.post(
       image: '/images/p1.jpg',
       price: 0,
       category: 'sample category',
+      featured: false,
       brand: 'sample brand',
       countInStock: 0,
       rating: 0,
@@ -53,9 +62,11 @@ productRouter.put(
       product.images = req.body.images;
       product.brand = req.body.brand;
       product.category = req.body.category;
+      product.featured = req.body.featured;
       product.countInStock = req.body.countInStock;
       product.description = req.body.description;
       const updatedProduct = await product.save();
+      // console.log("product updated: ", updatedProduct);
       res.send({ message: 'Product Updated' });
     } else {
       res.status(404).send({ message: 'Product Not Found' });

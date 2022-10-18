@@ -91,7 +91,7 @@ function App() {
                 <i className="fas fa-bars"></i>
               </Button>
               <LinkContainer to="/">
-                <Navbar.Brand>Fuhr Ecommerce</Navbar.Brand>
+                <Navbar.Brand>Fuhr eCommerce</Navbar.Brand>
               </LinkContainer>
               {/* hamburguer menu same aria-controls */}
               <Navbar.Toggle aria-controls="basic-navbar-nav" />

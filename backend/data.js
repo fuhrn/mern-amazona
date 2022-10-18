@@ -21,6 +21,7 @@ const data = {
       name: "Casio F91W-1 Classic Resin Strap Digital Sport Watch",
       slug: "casio-f91w-1-classic-resin-strap-digital-sport-watch",
       category: "Watches",
+      featured: false,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/lbs5qiqaqba8k3diwxrf.jpg",
       images: [
@@ -40,6 +41,7 @@ const data = {
       name: "Amazfit Bip 3 Pro Smart Watch for Android iPhone",
       slug: "amazfit-bip-3-pro-smart-watch-for-android-iphone",
       category: "Watches",
+      featured: true,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/Amazfit_pro_1_yglk08.jpg",
       images: [
@@ -59,6 +61,7 @@ const data = {
       name: "Timex Unisex Weekender 38mm Watch",
       slug: "timex-unisex-weekender-38mm-watch",
       category: "Watches",
+      featured: false,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/Timex_unisex_1_gd3lln.jpg",
       images: [
@@ -78,6 +81,7 @@ const data = {
       name: "Fossil Men's Minimalist Stainless Steel Slim Casual Watch",
       slug: "fossil-mens-minimalist-stainless-steel-slim-casual-watch",
       category: "Watches",
+      featured: false,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/Fossil_1_v9lox5.jpg",
       images: [
@@ -97,6 +101,7 @@ const data = {
       name: "Philips H4205 On-Ear Wireless Headphones",
       slug: "philips-h4205-on-ear-wireless-headphones",
       category: "Headphones",
+      featured: true,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/headphone_phillips_1_pw6par.jpg",
       images: [
@@ -116,6 +121,7 @@ const data = {
       name: "Bang & Olufsen Beoplay H95 Premium Comfortable Wireless",
       slug: "bang-olufsen-beoplay-h95-premium-comfortable-wireless",
       category: "Headphones",
+      featured: false,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/Bang_1_ojn2ha.jpg",
       images: [
@@ -135,6 +141,7 @@ const data = {
       name: "JBL Tune 125TWS True Wireless In-Ear Headphones",
       slug: "jbl-tune-125tws-true-wireless-in-ear-headphones",
       category: "Headphones",
+      featured: false,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/jbl_headphone_1_ssuaxt.jpg",
       images: [
@@ -154,6 +161,7 @@ const data = {
       name: "Jabra Elite 3 in Ear Wireless Bluetooth Earbuds – Noise Isolating",
       slug: "jabra-elite-3-in-ear-wireless-bluetooth-earbuds-noise-isolating",
       category: "Headphones",
+      featured: false,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/jabra_headpone_1_rn0lxc.jpg",
       images: [
@@ -173,6 +181,7 @@ const data = {
       name: "HOTWEEMS Wireless Mouse, D-09 Computer Mouse USB Cordless Mice for Laptop",
       slug: "hotweems-wireless-mouse-d-09-computer-mouse-usb-cordless-mice-for-laptop",
       category: "Mouses",
+      featured: false,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/hotweems_mouse_1_e3hl2k.jpg",
       images: [
@@ -192,6 +201,7 @@ const data = {
       name: "Amazon Basics 3-Button Wired USB",
       slug: "amazon-basics-3-button-wired-usb",
       category: "Mouses",
+      featured: true,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/amazon_mouse_1_cyoe1u.jpg",
       images: [
@@ -211,6 +221,7 @@ const data = {
       name: "Verbatim USB Corded Mini Travel Optical Wired Mouse for Mac and PC",
       slug: "verbatim-usb-corded-mini-travel-optical-wired-mouse-for-mac-and-pc",
       category: "Mouses",
+      featured: false,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/verbatim_mouse_1_ivgbbr.jpg",
       images: [
@@ -230,6 +241,7 @@ const data = {
       name: "Logitech G203 Wired Gaming Mouse, 8,000 DPI, Rainbow Optical Effect",
       slug: "logitech-g203-wired-gaming-mouse-8000-dpi-rainbow-optical-effect",
       category: "Mouses",
+      featured: false,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/Logitec_mouse_1_ocvjjq.jpg",
       images: [
@@ -249,6 +261,7 @@ const data = {
       name: "Acer SB220Q bi 21.5 Inches Full HD (1920 x 1080) IPS",
       slug: "acer-sb220q-bi-215-inches-full-hd-1920-x-1080-ips",
       category: "Monitors",
+      featured: false,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/acer_monitor_1_goy93i.jpg",
       images: [
@@ -268,6 +281,7 @@ const data = {
       name: "ASUS VY279HE 27” Eye Care Monitor, 1080P Full HD, 75Hz, IPS",
       slug: "asus-vy279he-27-eye-care-monitor-1080p-full-hd-75hz-ips",
       category: "Monitors",
+      featured: false,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/asus_monitor_1_uw83ed.jpg",
       images: [
@@ -287,6 +301,7 @@ const data = {
       name: "LG 34WP60C-B 34-Inch 21:9 Curved UltraWide QHD (3440x1440)",
       slug: "lg-34wp60c-b-34-inch-219-curved-ultraWide-qhd-3440x1440",
       category: "Monitors",
+      featured: true,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/LG_monitor_1_ilbo0r.jpg",
       images: [
@@ -306,6 +321,7 @@ const data = {
       name: "ViewSonic VA2447-MHU 24 Inch Full HD 1080p USB C Monitor with Ultra-Thin Bezel",
       slug: "viewsonic-va2447-mhu-24-inch-full-hd-1080p-usb-c-monitor-with-ultra-thin-bezel",
       category: "Monitors",
+      featured: false,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/viewSonic_1_ox6jf3.jpg",
       images: [
@@ -325,6 +341,7 @@ const data = {
       name: "Paper Mate Gel Pens | InkJoy Pens, Medium Point, Assorted, 14 Count",
       slug: "paper-mate-gel-pens-inkjoy-pens-medium-point-assorted-14-count",
       category: "Pens",
+      featured: false,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/papermate_pens_1_xkklcy.jpg",
       images: [
@@ -344,6 +361,7 @@ const data = {
       name: "Pentel WOW! Colors Retractable Ballpoint Pens, Medium Line, Assorted Ink Colors, 8 Pack (BK440BP8M)",
       slug: "pentel-wow-colors-retractable-ballpoint-pens-medium-line-assorted-ink-colors-8-pack-bk440BP8M",
       category: "Pens",
+      featured: false,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/pentel_pens_1_ebvwsm.jpg",
       images: [
@@ -363,6 +381,7 @@ const data = {
       name: "BIC Round Stic Grip Xtra Comfort Ballpoint Pen, Medium Point (1.2mm)",
       slug: "bic-round-stic-grip-xtra-comfort-ballpoint-pen-medium-point-12mm",
       category: "Pens",
+      featured: false,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/bic_pen_1_eyvako.jpg",
       images: [
@@ -381,6 +400,7 @@ const data = {
       name: "uni-ball Roller Grip Rollerball Pens Fine Point, 0.7mm, Black, 12 Pack",
       slug: "uni-ball-roller-grip-rollerball-pens-fine-point-07mm-black-12-pack",
       category: "Pens",
+      featured: false,
       image:
         "https://res.cloudinary.com/ddt3wrica/image/upload/v1666024442/uniball_pen_1_pccmq5.jpg",
       images: [
